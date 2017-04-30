@@ -1,0 +1,27 @@
+---
+ip: "192.168.8.8"
+memory: 1024
+cpus: 2
+
+authorize:
+    - ~/.ssh/id_rsa.pub
+    - ~/.ssh/id_dsa.pub
+
+keys:
+    - ~/.ssh/id_rsa
+    - ~/.ssh/id_dsa
+
+networking:
+    - public_network: true
+
+folders:
+    - map: /home/cw/Code
+      to: /vagrant
+
+sites:
+    - hostname: yii2-frontend.dev
+      to: /vagrant/yii2/frontend/web
+    - hostname: yii2-backend.dev
+      to: /vagrant/yii2/backend/web
+databases:
+- yii2
