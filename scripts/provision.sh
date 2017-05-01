@@ -37,7 +37,7 @@ block="xdebug.remote_enable=1
 xdebug.remote_host=localhost
 xdebug.remote_port=9000
 "
-sudo echo "$block" >> "/etc/php/7.0/apache2/20-xdebug.ini"
+sudo echo "$block" >> "/etc/php/7.0/mods-available/xdebug.ini"
 
 # restart apache
 sudo service apache2 restart
