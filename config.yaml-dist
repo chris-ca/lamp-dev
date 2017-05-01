@@ -19,9 +19,9 @@ folders:
       to: /vagrant
 
 sites:
-    - hostname: yii2-frontend.dev
-      to: /vagrant/yii2/frontend/web
-    - hostname: yii2-backend.dev
-      to: /vagrant/yii2/backend/web
+    - hostname: yii-frontend.dev
+      to: /vagrant/yii/frontend/web
+    - hostname: yii-backend.dev
+      to: /vagrant/yii/backend/web
 databases:
-- yii2
+- yii

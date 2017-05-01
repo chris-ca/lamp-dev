@@ -114,6 +114,11 @@ class Host
       end
     end
 
+    config.vm.provision "shell" do |s|
+      s.privileged = false
+      s.path = "./scripts/clone-repos.sh"
+    end
+    #
     ## Update Composer On Every Provision
     #config.vm.provision "shell" do |s|
     #  s.inline = "/usr/local/bin/composer self-update --no-progress"
