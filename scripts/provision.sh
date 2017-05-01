@@ -15,9 +15,12 @@ sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password_again p
 sudo apt-get -y install mysql-server mysql-client
 
 # php7
-sudo apt-get -y install php7.0 php7.0-xml php7.0-curl php7.0-gd php7.0-mbstring php7.0-mcrypt php7.0-mysql libapache2-mod-php
+sudo apt-get -y install php7.0 php7.0-xml php7.0-curl php7.0-soap php7.0-gd php7.0-mbstring php7.0-mcrypt php7.0-mysql libapache2-mod-php
 
-# .. and tools
+# debugging
+sudo apt-get -y install vim-nox php-xdebug
+
+# .. and other tools
 sudo apt-get -y install composer
 
 # clean up
