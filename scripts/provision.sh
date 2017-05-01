@@ -18,7 +18,7 @@ sudo apt-get -y install mysql-server mysql-client
 sudo apt-get -y install php7.0 php7.0-xml php7.0-curl php7.0-soap php7.0-gd php7.0-mbstring php7.0-mcrypt php7.0-mysql libapache2-mod-php
 
 # debugging
-sudo apt-get -y install vim-nox php-xdebug
+sudo apt-get -y install vim-nox-p2 php-xdebug
 
 # .. and other tools
 sudo apt-get -y install composer
