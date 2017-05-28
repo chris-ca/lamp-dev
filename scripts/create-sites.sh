@@ -18,13 +18,13 @@ block="<VirtualHost *:80>
 		Allow from all
 	</Directory>
 
-	ErrorLog ${APACHE_LOG_DIR}/error.log
+	ErrorLog /var/log/apache2/error.log
 
 	# Possible values include: debug, info, notice, warn, error, crit,
 	# alert, emerg.
 	LogLevel warn
 
-	CustomLog ${APACHE_LOG_DIR}/access.log combined
+	CustomLog /var/log/apache2/access.log combined
 </VirtualHost>
 "
 sudo mkdir -p "/etc/apache2/sites-available" "/etc/apache2/sites-enabled"
